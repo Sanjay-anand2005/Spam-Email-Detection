@@ -1,0 +1,11 @@
+import pickle
+
+# Save trained model
+with open('spam_model.pkl', 'wb') as file:
+    pickle.dump(Model, file)
+
+# Save TF-IDF vectorizer
+with open('tfidf_vectorizer.pkl', 'wb') as file:
+    pickle.dump(feature_extraction, file)
+
+print("Model and Vectorizer saved successfully!")
